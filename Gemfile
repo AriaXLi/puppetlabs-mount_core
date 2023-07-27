@@ -27,7 +27,7 @@ group :development do
   gem "beaker", *location_for(ENV['BEAKER_VERSION'] || '~> 4.30')
   gem "beaker-abs", *location_for(ENV['BEAKER_ABS_VERSION'] || '~> 0.9')
   gem "beaker-pe",                                                               require: false
-  gem "beaker-hostgenerator"
+  gem "beaker-hostgenerator", git: 'https://github.com/AriaXLi/beaker-hostgenerator', branch: 'move_abs_template_logic_to_hypervisor'
   gem "beaker-rspec"
   gem "beaker-puppet", *location_for(ENV['BEAKER_PUPPET_VERSION'] || '~> 1.22')
   gem "github_changelog_generator",                                              require: false
